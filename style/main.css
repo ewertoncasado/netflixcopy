@@ -4,7 +4,7 @@
 }
 
 *{
-    margin:0%;
+    margin: 0%;
     padding:0%;
     box-sizing: border-box;
 }
@@ -12,8 +12,9 @@
 /*elementos base*/
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
+    justify-content: center;
 }
 
 
@@ -27,8 +28,9 @@ justify-content: space-between;
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
-    font-family:'Arial Black','Times New Roman', Times, serif;
+    font-family:sans-serif , Times, serif;
     font-size: 40px;
+    font-style: oblique;
 }
 
 header nav a{
@@ -43,22 +45,27 @@ header nav a:hover{
 
 /* filme principal*/
 .filme-principal{
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.100)), url('/img/ctw.png');  
+    
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.100)), url('/img/ctw.jpg');  
     font-size: 16px;
     height: 400px;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    
+   
 }
 
 .filme-principal .descricao{
+    margin-left: 5px;
     margin-top: 15px;
     margin-bottom: 40px;
 }
 
 .titulo{
+    margin-left: 10px;
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -67,6 +74,7 @@ header nav a:hover{
 
 .botao{
     background-color: rgba(0, 0, 1, 0.397);
+    border: none;
     color: white;
     padding: 15px 30px;
     margin-right: 15px;
@@ -83,4 +91,25 @@ header nav a:hover{
 
 .botao i{
     margin-right: 6px;
+}
+
+.filme-principal .container{
+    width: 70%;
+
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    box-sizing: 3px;
+}
+
+.carrosel-filmes{
+    margin-top: 50px;
+}
+
+.item{
+    width: 250px;
+
 }
